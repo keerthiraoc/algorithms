@@ -12,8 +12,10 @@ function merger(left, right){
         if (left[0] < right[0]){
             arr.push(left.shift())
         } else {
-            arr.push( right.shift())
+            arr.push(right.shift())
         }
     }
     return [ ...arr, ...left, ... right];
 }
+
+// O(n*log(n))
